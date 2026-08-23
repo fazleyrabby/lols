@@ -824,6 +824,31 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "outbuilt.lol",
+    "title": "outbuilt.lol — Don't Outbid Them, Outbuild Them",
+    "description": "A public leaderboard rendered as a skyline. Every bid is a building, your money is the height, and the tallest tower owns the view.",
+    "category": "Games",
+    "monthlyVisits": 720000,
+    "globalRank": 59400,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "Canvas API",
+      "React"
+    ],
+    "tags": [
+      "outbuilt",
+      "skyline",
+      "bidding",
+      "leaderboard",
+      "game",
+      "viral"
+    ],
+    "source": "SimilarWeb",
+    "lastChecked": "2026-08-23"
+  },
+  {
     "domain": "diff.lol",
     "title": "You had one thought. We made it wearable. &ndash; Me...",
     "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
