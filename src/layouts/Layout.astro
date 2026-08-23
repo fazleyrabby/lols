@@ -7,7 +7,6 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN || '';
 ---
 
 <!doctype html>
@@ -22,13 +21,12 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN || '';
   <body class="flex flex-col min-h-screen">
     <slot />
 
-    <!-- Cloudflare Web Analytics (100% Free & Unlimited) -->
-    {cfBeaconToken && (
-      <script 
-        defer 
-        src="https://static.cloudflareinsights.com/beacon.min.js" 
-        data-cf-beacon={`{"token": "${cfBeaconToken}"}`}
-      ></script>
-    )}
+    <!-- Cloudflare Web Analytics -->
+    <script 
+      defer 
+      src="https://static.cloudflareinsights.com/beacon.min.js" 
+      data-cf-beacon='{"token": "7be15276cbd64a0eb08a0dbaed221847"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
