@@ -8,15 +8,12 @@
       <span class="text-neutral-700">&copy; {new Date().getFullYear()} .lol Explorer</span>
     </div>
 
-    <!-- Live Visitor Hit Counter Badge -->
-    <div class="flex items-center gap-2 border-2 border-black bg-[#FFFDF5] p-1 shadow-[2px_2px_0px_#000]">
-      <span class="text-[10px] text-neutral-500 uppercase px-1 font-bold">Live Traffic:</span>
-      <img 
-        src="https://hits.sh/lol.fazleyrabbi.xyz.svg?style=flat-square&label=VISITS&color=FFE600&labelColor=000000" 
-        alt="Live Visits" 
-        class="h-5 inline-block"
-        loading="lazy"
-      />
+    <!-- Smart Deduplicated Live Hit Counter Badge -->
+    <div id="traffic-counter-container" class="flex items-center gap-2 border-2 border-black bg-[#FFFDF5] p-1 shadow-[2px_2px_0px_#000]">
+      <span class="text-[10px] text-neutral-500 uppercase px-1 font-bold">Verified Traffic:</span>
+      <div id="counter-badge-slot" class="inline-block min-w-[70px] text-center">
+        <span id="counter-loading" class="text-[11px] font-mono text-neutral-400">● Live</span>
+      </div>
     </div>
 
     <!-- Links -->
@@ -30,3 +27,47 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Smart Visitor Counter: 
+  // 1. Ignores localhost/development (never inflates while testing)
+  // 2. Uses sessionStorage to only count once per user session (refreshing won't increment)
+  function initCounter() {
+    const slot = document.getElementById('counter-badge-slot');
+    if (!slot) return;
+
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    // Check if user already counted in this session
+    const hasCounted = sessionStorage.getItem('lol_visited');
+
+    const img = document.createElement('img');
+    img.alt = 'Visits';
+    img.className = 'h-5 inline-block';
+    
+    if (isLocalhost) {
+      // In dev mode, show a clean dev badge without calling the counter
+      slot.innerHTML = '<span class="px-1.5 py-0.5 bg-[#FFE600] text-black border border-black text-[10px] font-mono font-bold">DEV MODE</span>';
+      return;
+    }
+
+    if (!hasCounted) {
+      sessionStorage.setItem('lol_visited', 'true');
+      img.src = `https://hits.sh/lol.fazleyrabbi.xyz.svg?style=flat-square&label=VISITS&color=FFE600&labelColor=000000&_t=${Date.now()}`;
+    } else {
+      // If already visited this session, fetch cached badge without incrementing
+      img.src = `https://hits.sh/lol.fazleyrabbi.xyz.svg?style=flat-square&label=VISITS&color=FFE600&labelColor=000000`;
+    }
+
+    img.onload = () => {
+      slot.innerHTML = '';
+      slot.appendChild(img);
+    };
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCounter);
+  } else {
+    initCounter();
+  }
+</script>
