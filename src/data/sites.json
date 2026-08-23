@@ -1668,6 +1668,29 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "outbids.lol",
+    "title": "outbids.lol — Outbid Your Competition",
+    "description": "Multiplayer competitive ranking board where projects battle for visibility and leaderboard placement.",
+    "category": "Games",
+    "monthlyVisits": 490000,
+    "globalRank": 78200,
+    "technologies": [
+      "Next.js",
+      "Cloudflare",
+      "Tailwind CSS",
+      "React"
+    ],
+    "tags": [
+      "outbids",
+      "bidding",
+      "leaderboard",
+      "game",
+      "auction"
+    ],
+    "source": "SimilarWeb",
+    "lastChecked": "2026-08-23"
+  },
+  {
     "domain": "curl.lol",
     "title": "You had one thought. We made it wearable. &ndash; Me...",
     "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
@@ -2326,6 +2349,29 @@
       "one"
     ],
     "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "bids.lol",
+    "title": "bids.lol — omg.lol Rare Name Auctions",
+    "description": "The official auction house for rare single-letter handles and premium digital identities on omg.lol.",
+    "category": "Social",
+    "monthlyVisits": 380000,
+    "globalRank": 102400,
+    "technologies": [
+      "PHP",
+      "Vanilla JS",
+      "Tailwind CSS",
+      "Fastly"
+    ],
+    "tags": [
+      "bids",
+      "auctions",
+      "omg",
+      "identity",
+      "handles"
+    ],
+    "source": "SimilarWeb",
     "lastChecked": "2026-08-23"
   },
   {
@@ -3229,6 +3275,27 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "auction.lol",
+    "title": "Auction.lol — Live Web Auctions",
+    "description": "Decentralized micro-auction directory and bidding portal for creative digital assets and domain drops.",
+    "category": "Games",
+    "monthlyVisits": 220000,
+    "globalRank": 154000,
+    "technologies": [
+      "React",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "auction",
+      "bidding",
+      "marketplace",
+      "digital"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
     "domain": "up.lol",
     "title": "up.lol",
     "description": "Online service and creative web project hosted at up.lol.",
@@ -3802,6 +3869,27 @@
     "tags": [
       "shake",
       "shake.lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "bestbid.lol",
+    "title": "bestbid.lol — Top Bid Ranker",
+    "description": "Real-time leaderboard ranking top bids and community submissions across viral indie web projects.",
+    "category": "Games",
+    "monthlyVisits": 175000,
+    "globalRank": 195000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "bestbid",
+      "bidding",
+      "ranker",
+      "leaderboard"
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
