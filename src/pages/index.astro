@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Trending from '../components/Trending.astro';
+import Explorer from '../components/Explorer.astro';
+import SiteModal from '../components/SiteModal.astro';
+import { sites } from '../data/sites';
+
+const totalSites = sites.length;
+const categories = new Set(sites.map((s) => s.category)).size;
+const technologies = new Set(sites.flatMap((s) => s.technologies)).size;
+---
+
+<Layout 
+  title=".lol Explorer — Discover the .lol Internet" 
+  description="A fast, curated index of tools, experiments, games, and creative projects built on .lol domains."
+>
+  <Header sites={sites} />
+  
+  <main class="flex-grow">
+    <!-- Neo-Brutalist Compact Hero & Metrics Header -->
+    <section class="border-b-2 border-black bg-[#FFFDF5]">
+      <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#A3E635] border-2 border-black font-mono text-[11px] font-bold uppercase shadow-[2px_2px_0px_#000] mb-3">
+            <span>● LIVE DIRECTORY</span>
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-black mb-2">
+            Explore the <span class="bg-[#FFE600] border-2 border-black px-2 py-0.5 shadow-[3px_3px_0px_#000] inline-block -rotate-1">.lol</span> internet
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-neutral-700 max-w-xl leading-relaxed">
+            The curated directory indexing real tools, multiplayer experiments, retro games, and viral projects on .lol.
+          </p>
+        </div>
+
+        <!-- Inline Neo-Brutalist Metrics -->
+        <div class="flex items-center gap-4 text-xs font-mono py-2.5 px-4 bg-white border-2 border-black shadow-[4px_4px_0px_#000] self-start md:self-end">
+          <div>
+            <span class="text-neutral-500 uppercase text-[10px] block font-bold">Verified</span>
+            <strong class="text-black font-extrabold text-sm">{totalSites} SITES</strong>
+          </div>
+          <div class="w-0.5 h-7 bg-black"></div>
+          <div>
+            <span class="text-neutral-500 uppercase text-[10px] block font-bold">Categories</span>
+            <strong class="text-black font-extrabold text-sm">{categories}</strong>
+          </div>
+          <div class="w-0.5 h-7 bg-black"></div>
+          <div>
+            <span class="text-neutral-500 uppercase text-[10px] block font-bold">Tech Stack</span>
+            <strong class="text-black font-extrabold text-sm">{technologies}</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Bento Section -->
+    <Trending sites={sites} />
+
+    <!-- Explorer Section (With Filters, Sorting & Grid/List View) -->
+    <Explorer sites={sites} />
+
+    <!-- Site Details Modal -->
+    <SiteModal />
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,333 @@
+---
+import type { LolSite } from '../types/site';
+import SiteCard from './SiteCard.astro';
+import SiteRow from './SiteRow.astro';
+
+interface Props {
+  sites: LolSite[];
+}
+
+const { sites } = Astro.props;
+
+const categories = ['All', ...new Set(sites.map((s) => s.category))];
+const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.technologies))];
+---
+
+<section id="explore" class="max-w-7xl mx-auto px-4 py-8">
+  <!-- Section Title -->
+  <div class="flex items-center justify-between mb-4 pb-2 border-b-2 border-black">
+    <div class="flex items-center gap-2">
+      <span class="bg-black text-white px-2 py-0.5 font-mono text-[10px] font-bold uppercase">DIRECTORY</span>
+      <h2 class="text-base font-extrabold text-black uppercase tracking-tight">Browse All Websites</h2>
+    </div>
+    <div id="results-count" class="text-xs font-mono font-bold text-black">
+      Showing {sites.length} of {sites.length} sites
+    </div>
+  </div>
+
+  <!-- Neo-Brutalist Filter & Controls Toolbar -->
+  <div class="flex flex-col gap-3 mb-6 bg-white p-4 border-2 border-black shadow-[4px_4px_0px_#000]">
+    <!-- Row 1: Search & Controls -->
+    <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between">
+      <!-- Search -->
+      <div class="relative flex-1">
+        <input 
+          id="explorer-search" 
+          type="text" 
+          placeholder="Search by domain, title, tag, or tech..." 
+          class="w-full h-10 pl-9 pr-4 text-xs font-mono font-medium border-2 border-black bg-[#F8F6F0] focus:bg-white outline-none shadow-[2px_2px_0px_#000] focus:shadow-[3px_3px_0px_#000] transition-all placeholder:text-neutral-500"
+        />
+        <div class="absolute left-3 top-1/2 -translate-y-1/2 text-black pointer-events-none font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+      </div>
+
+      <!-- Controls Group -->
+      <div class="flex items-center gap-2 flex-wrap">
+        <!-- Tech Select -->
+        <select id="tech-select" class="h-10 px-3 text-xs font-mono font-bold border-2 border-black bg-[#F8F6F0] shadow-[2px_2px_0px_#000] focus:bg-white outline-none text-black cursor-pointer">
+          {technologies.map((tech) => (
+            <option value={tech === 'All Technologies' ? 'all' : tech}>{tech}</option>
+          ))}
+        </select>
+
+        <!-- Sort Select -->
+        <select id="sort-select" class="h-10 px-3 text-xs font-mono font-bold border-2 border-black bg-[#F8F6F0] shadow-[2px_2px_0px_#000] focus:bg-white outline-none text-black cursor-pointer">
+          <option value="visits-desc">Sort: Most Visited</option>
+          <option value="rank-asc">Sort: Highest Ranked</option>
+          <option value="name-asc">Sort: Name (A-Z)</option>
+          <option value="name-desc">Sort: Name (Z-A)</option>
+          <option value="recent">Sort: Recently Checked</option>
+        </select>
+
+        <!-- Grid/List View Toggle -->
+        <div class="flex items-center border-2 border-black h-10 bg-white shadow-[2px_2px_0px_#000] p-0.5">
+          <button 
+            id="view-grid-btn" 
+            type="button" 
+            class="h-full px-2.5 flex items-center justify-center bg-black text-white font-bold transition-all cursor-pointer" 
+            title="Grid View"
+            aria-label="Switch to Grid View"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><rect width="7" height="7" x="3" y="3"/><rect width="7" height="7" x="14" y="3"/><rect width="7" height="7" x="14" y="14"/><rect width="7" height="7" x="3" y="14"/></svg>
+          </button>
+          <button 
+            id="view-list-btn" 
+            type="button" 
+            class="h-full px-2.5 flex items-center justify-center text-neutral-400 hover:text-black transition-all cursor-pointer" 
+            title="List View"
+            aria-label="Switch to List View"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Category Filter Pills -->
+    <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs pt-2 border-t-2 border-black/10 scrollbar-none">
+      <span class="text-neutral-500 font-mono text-[11px] font-bold uppercase mr-1 flex-shrink-0">Category:</span>
+      {categories.map((cat, idx) => (
+        <button
+          type="button"
+          class={`cat-pill px-3 py-1 text-xs font-mono font-bold border-2 border-black shadow-[2px_2px_0px_#000] hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all cursor-pointer whitespace-nowrap ${
+            idx === 0
+              ? 'bg-black text-white'
+              : 'bg-white text-black hover:bg-[#FFE600]'
+          }`}
+          data-category={cat}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <!-- Content Container: Grid View -->
+  <div id="grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {sites.map((site) => (
+      <SiteCard site={site} />
+    ))}
+  </div>
+
+  <!-- Content Container: List View (Hidden by default) -->
+  <div id="list-container" class="hidden flex-col gap-2">
+    {sites.map((site) => (
+      <SiteRow site={site} />
+    ))}
+  </div>
+
+  <!-- Empty State -->
+  <div id="empty-state" class="hidden text-center py-12 bg-white border-2 border-black shadow-[4px_4px_0px_#000] p-8">
+    <div class="font-mono text-xs font-bold text-neutral-500 uppercase tracking-widest mb-1">NO MATCHES FOUND</div>
+    <h3 class="text-lg font-black text-black mb-1 uppercase">No websites match your filter</h3>
+    <p class="text-xs font-medium text-neutral-600 max-w-sm mx-auto mb-4">
+      Try searching for another keyword or reset active filters.
+    </p>
+    <button 
+      id="reset-filters-btn" 
+      type="button" 
+      class="px-4 py-2 bg-[#FFE600] text-black border-2 border-black font-mono font-bold text-xs shadow-[2px_2px_0px_#000] hover:shadow-[4px_4px_0px_#000] hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all cursor-pointer"
+    >
+      RESET ALL FILTERS
+    </button>
+  </div>
+</section>
+
+<script>
+  let currentCategory = 'All';
+  let currentTech = 'all';
+  let currentSearch = '';
+  let currentSort = 'visits-desc';
+  let currentView: 'grid' | 'list' = 'grid';
+
+  const explorerSearch = document.getElementById('explorer-search') as HTMLInputElement;
+  const techSelect = document.getElementById('tech-select') as HTMLSelectElement;
+  const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
+  const viewGridBtn = document.getElementById('view-grid-btn') as HTMLButtonElement;
+  const viewListBtn = document.getElementById('view-list-btn') as HTMLButtonElement;
+  const gridContainer = document.getElementById('grid-container') as HTMLElement;
+  const listContainer = document.getElementById('list-container') as HTMLElement;
+  const emptyState = document.getElementById('empty-state') as HTMLElement;
+  const resultsCount = document.getElementById('results-count') as HTMLElement;
+  const resetBtn = document.getElementById('reset-filters-btn') as HTMLButtonElement;
+  const catPills = document.querySelectorAll('.cat-pill');
+
+  if (explorerSearch) {
+    explorerSearch.addEventListener('input', (e) => {
+      const val = (e.target as HTMLInputElement).value;
+      currentSearch = val.toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  // Category Filter
+  catPills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      catPills.forEach((p) => {
+        p.classList.remove('bg-black', 'text-white');
+        p.classList.add('bg-white', 'text-black', 'hover:bg-[#FFE600]');
+      });
+      pill.classList.remove('bg-white', 'text-black', 'hover:bg-[#FFE600]');
+      pill.classList.add('bg-black', 'text-white');
+
+      currentCategory = pill.getAttribute('data-category') || 'All';
+      applyFilters();
+    });
+  });
+
+  // Tech Select
+  techSelect?.addEventListener('change', (e) => {
+    currentTech = (e.target as HTMLSelectElement).value;
+    applyFilters();
+  });
+
+  // Sort Select
+  sortSelect?.addEventListener('change', (e) => {
+    currentSort = (e.target as HTMLSelectElement).value;
+    applySorting();
+  });
+
+  // View Toggles
+  viewGridBtn?.addEventListener('click', () => {
+    currentView = 'grid';
+    gridContainer.classList.remove('hidden');
+    listContainer.classList.add('hidden');
+    listContainer.classList.remove('flex');
+
+    viewGridBtn.classList.add('bg-black', 'text-white');
+    viewGridBtn.classList.remove('text-neutral-400');
+    viewListBtn.classList.remove('bg-black', 'text-white');
+    viewListBtn.classList.add('text-neutral-400');
+  });
+
+  viewListBtn?.addEventListener('click', () => {
+    currentView = 'list';
+    gridContainer.classList.add('hidden');
+    listContainer.classList.remove('hidden');
+    listContainer.classList.add('flex');
+
+    viewListBtn.classList.add('bg-black', 'text-white');
+    viewListBtn.classList.remove('text-neutral-400');
+    viewGridBtn.classList.remove('bg-black', 'text-white');
+    viewGridBtn.classList.add('text-neutral-400');
+  });
+
+  // Reset Button
+  resetBtn?.addEventListener('click', () => {
+    currentSearch = '';
+    currentCategory = 'All';
+    currentTech = 'all';
+    currentSort = 'visits-desc';
+
+    if (explorerSearch) explorerSearch.value = '';
+    if (techSelect) techSelect.value = 'all';
+    if (sortSelect) sortSelect.value = 'visits-desc';
+
+    catPills.forEach((p, idx) => {
+      if (idx === 0) {
+        p.classList.add('bg-black', 'text-white');
+        p.classList.remove('bg-white', 'text-black', 'hover:bg-[#FFE600]');
+      } else {
+        p.classList.remove('bg-black', 'text-white');
+        p.classList.add('bg-white', 'text-black', 'hover:bg-[#FFE600]');
+      }
+    });
+
+    applyFilters();
+    applySorting();
+  });
+
+  function applyFilters() {
+    const gridItems = Array.from(gridContainer.children) as HTMLElement[];
+    const listItems = Array.from(listContainer.children) as HTMLElement[];
+    let visibleCount = 0;
+    const totalCount = gridItems.length;
+
+    gridItems.forEach((gridEl, idx) => {
+      const listEl = listItems[idx];
+      const domain = gridEl.getAttribute('data-domain') || '';
+      const title = gridEl.getAttribute('data-title') || '';
+      const description = gridEl.getAttribute('data-description') || '';
+      const category = gridEl.getAttribute('data-category') || '';
+      const tech = (gridEl.getAttribute('data-tech') || '').toLowerCase();
+      const tags = (gridEl.getAttribute('data-tags') || '').toLowerCase();
+
+      // Search match
+      const matchesSearch = !currentSearch || 
+        domain.includes(currentSearch) ||
+        title.includes(currentSearch) ||
+        description.includes(currentSearch) ||
+        tags.includes(currentSearch) ||
+        tech.includes(currentSearch);
+
+      // Category match
+      const matchesCategory = currentCategory === 'All' || category === currentCategory;
+
+      // Tech match
+      const matchesTech = currentTech === 'all' || tech.split(',').map(t => t.trim().toLowerCase()).includes(currentTech.toLowerCase());
+
+      const isVisible = matchesSearch && matchesCategory && matchesTech;
+
+      if (isVisible) {
+        gridEl.style.display = '';
+        if (listEl) listEl.style.display = '';
+        visibleCount++;
+      } else {
+        gridEl.style.display = 'none';
+        if (listEl) listEl.style.display = 'none';
+      }
+    });
+
+    // Update count
+    if (resultsCount) {
+      resultsCount.textContent = `Showing ${visibleCount} of ${totalCount} sites`;
+    }
+
+    // Empty state toggle
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      gridContainer.classList.add('hidden');
+      listContainer.classList.add('hidden');
+      listContainer.classList.remove('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      if (currentView === 'grid') {
+        gridContainer.classList.remove('hidden');
+      } else {
+        listContainer.classList.remove('hidden');
+        listContainer.classList.add('flex');
+      }
+    }
+  }
+
+  function applySorting() {
+    const gridItems = Array.from(gridContainer.children) as HTMLElement[];
+    const listItems = Array.from(listContainer.children) as HTMLElement[];
+
+    const sortFn = (a: HTMLElement, b: HTMLElement) => {
+      const visitsA = parseInt(a.getAttribute('data-visits') || '0', 10);
+      const visitsB = parseInt(b.getAttribute('data-visits') || '0', 10);
+      const rankA = parseInt(a.getAttribute('data-rank') || '9999999', 10);
+      const rankB = parseInt(b.getAttribute('data-rank') || '9999999', 10);
+      const domainA = a.getAttribute('data-domain') || '';
+      const domainB = b.getAttribute('data-domain') || '';
+
+      switch (currentSort) {
+        case 'visits-desc':
+          return visitsB - visitsA;
+        case 'rank-asc':
+          return rankA - rankB;
+        case 'name-asc':
+          return domainA.localeCompare(domainB);
+        case 'name-desc':
+          return domainB.localeCompare(domainA);
+        default:
+          return 0;
+      }
+    };
+
+    gridItems.sort(sortFn).forEach((el) => gridContainer.appendChild(el));
+    listItems.sort(sortFn).forEach((el) => listContainer.appendChild(el));
+  }
+</script>

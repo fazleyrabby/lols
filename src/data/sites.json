@@ -1,0 +1,608 @@
+[
+  {
+    "domain": "outbid.lol",
+    "title": "Outbid.lol — The Real-Time Bidding Arena",
+    "description": "The viral competitive pay-to-rank leaderboard where players outbid each other in real-time to capture the top spot.",
+    "category": "Games",
+    "monthlyVisits": 1850000,
+    "globalRank": 12400,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "WebSockets"
+    ],
+    "tags": [
+      "outbid",
+      "auction",
+      "game",
+      "leaderboard",
+      "viral"
+    ],
+    "source": "SimilarWeb",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "omg.lol",
+    "title": "omg.lol — The Lovable Web Presence Service",
+    "description": "A super-fun personal web page, email forwarding, mastodon instance, statuslog, and pastebin for humans.",
+    "category": "Social",
+    "monthlyVisits": 1250000,
+    "globalRank": 28100,
+    "technologies": [
+      "PHP",
+      "Vanilla JS",
+      "Tailwind CSS",
+      "Fastly"
+    ],
+    "tags": [
+      "omg",
+      "profile",
+      "identity",
+      "indieweb",
+      "social"
+    ],
+    "source": "SimilarWeb",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "status.lol",
+    "title": "status.lol",
+    "description": "The omg.lol community statuslog",
+    "category": "SaaS",
+    "monthlyVisits": 920000,
+    "globalRank": 10227,
+    "technologies": [
+      "Astro",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "status",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "pixel.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 920000,
+    "globalRank": 9136,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "pixel",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "solarwar.lol",
+    "title": "SolarWar.lol — The Planetary Bidding Battle",
+    "description": "Solar system-themed viral bidding war where users battle to conquer the Sun, planets, and moons.",
+    "category": "Games",
+    "monthlyVisits": 640000,
+    "globalRank": 68200,
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Canvas API"
+    ],
+    "tags": [
+      "solarwar",
+      "space",
+      "bidding",
+      "game",
+      "multiplayer"
+    ],
+    "source": "SimilarWeb",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "fun.lol",
+    "title": "Just a moment...",
+    "description": "Online service and creative project hosted at fun.lol.",
+    "category": "Entertainment",
+    "monthlyVisits": 580000,
+    "globalRank": 16007,
+    "technologies": [
+      "Cloudflare"
+    ],
+    "tags": [
+      "fun",
+      "just",
+      "moment"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "trivia.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 580000,
+    "globalRank": 18321,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "trivia",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "hub.lol",
+    "title": "hub.lol",
+    "description": "Online service and creative project hosted at hub.lol.",
+    "category": "Tools",
+    "monthlyVisits": 580000,
+    "globalRank": 14735,
+    "technologies": [
+      "Cloudflare"
+    ],
+    "tags": [
+      "hub",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "lyrics.lol",
+    "title": "Lyrics.lol — Ad-Free Song Lyrics Archive",
+    "description": "Ultra-minimalist, fast-loading music lyrics finder without intrusive video ads or paywalls.",
+    "category": "Media",
+    "monthlyVisits": 530000,
+    "globalRank": 81000,
+    "technologies": [
+      "Astro",
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "lyrics",
+      "music",
+      "songs",
+      "adfree",
+      "audio"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "growit.lol",
+    "title": "GrowIt.lol — Viral Potential Predictor",
+    "description": "AI-assisted growth analytics and viral packaging predictor to score content virality before publishing.",
+    "category": "AI",
+    "monthlyVisits": 410000,
+    "globalRank": 92400,
+    "technologies": [
+      "Next.js",
+      "Cloudflare",
+      "Tailwind CSS",
+      "OpenAI"
+    ],
+    "tags": [
+      "growth",
+      "viral",
+      "analytics",
+      "ai",
+      "content"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "browser.lol",
+    "title": "Freely available Web-Based Virtual Browser - Br...",
+    "description": "With Browser.lol, you can reach a virtual environment within seconds in your existing browser, where you can access and test everything w...",
+    "category": "AI",
+    "monthlyVisits": 390000,
+    "globalRank": 24340,
+    "technologies": [
+      "Cloudflare",
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "browser",
+      "freely",
+      "available",
+      "web"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "svg.lol",
+    "title": "svg.lol",
+    "description": "Online service and creative project hosted at svg.lol.",
+    "category": "Tools",
+    "monthlyVisits": 390000,
+    "globalRank": 21580,
+    "technologies": [
+      "HTML5"
+    ],
+    "tags": [
+      "svg",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "api.lol",
+    "title": "Homepage | api.lol",
+    "description": "A website.",
+    "category": "Developer",
+    "monthlyVisits": 390000,
+    "globalRank": 22169,
+    "technologies": [
+      "HTML5"
+    ],
+    "tags": [
+      "api",
+      "homepage",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "docker.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 390000,
+    "globalRank": 21595,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "docker",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "dpm.lol",
+    "title": "DPM.lol — Live Gamer Stats & Match Tracker",
+    "description": "Fast-loading damage per minute calculator, player rank tracker, and live match analysis tool.",
+    "category": "Games",
+    "monthlyVisits": 320000,
+    "globalRank": 114500,
+    "technologies": [
+      "React",
+      "Cloudflare",
+      "Tailwind CSS",
+      "WebSockets"
+    ],
+    "tags": [
+      "gaming",
+      "dpm",
+      "stats",
+      "tracker",
+      "analytics"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "changelog.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 240000,
+    "globalRank": 37430,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "changelog",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "bio.lol",
+    "title": "pixel&#39;s page",
+    "description": "just a personal assistant with a website",
+    "category": "Social",
+    "monthlyVisits": 240000,
+    "globalRank": 34859,
+    "technologies": [
+      "Cloudflare",
+      "Netlify"
+    ],
+    "tags": [
+      "bio",
+      "pixel",
+      "page"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "paste.lol",
+    "title": "paste.lol",
+    "description": "a fun-loving pastebin from the makers of omg.lol",
+    "category": "Entertainment",
+    "monthlyVisits": 240000,
+    "globalRank": 35855,
+    "technologies": [
+      "HTML5"
+    ],
+    "tags": [
+      "paste",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "sudoku.lol",
+    "title": "Sudoku.lol - Play Sudoku in your browser. Easy,...",
+    "description": "Sudoku - Play online for free. Easy, medium and hard puzzles.",
+    "category": "Games",
+    "monthlyVisits": 240000,
+    "globalRank": 34243,
+    "technologies": [
+      "HTML5"
+    ],
+    "tags": [
+      "sudoku",
+      "lol",
+      "play",
+      "your"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "linux.lol",
+    "title": "linux.lol",
+    "description": "Online service and creative project hosted at linux.lol.",
+    "category": "Tools",
+    "monthlyVisits": 240000,
+    "globalRank": 36610,
+    "technologies": [
+      "Nginx",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "linux",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "code.lol",
+    "title": "Codeless Code",
+    "description": "Alice&#39;s personal blog about programming, math, and science.",
+    "category": "Developer",
+    "monthlyVisits": 240000,
+    "globalRank": 37025,
+    "technologies": [
+      "React"
+    ],
+    "tags": [
+      "code",
+      "codeless"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "drop.lol",
+    "title": "drop.lol",
+    "description": "Free and easy file sharing.",
+    "category": "Tools",
+    "monthlyVisits": 240000,
+    "globalRank": 35814,
+    "technologies": [
+      "Nginx"
+    ],
+    "tags": [
+      "drop",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "sync.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 240000,
+    "globalRank": 34759,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "sync",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "json.lol",
+    "title": "JSON is Fun - JSON.lol",
+    "description": "JSON.lol makes JSON fun",
+    "category": "Developer",
+    "monthlyVisits": 120000,
+    "globalRank": 66988,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "json",
+      "fun",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "cheatsheet.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 120000,
+    "globalRank": 68857,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "cheatsheet",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "radio.lol",
+    "title": "403 Forbidden",
+    "description": "Online service and creative project hosted at radio.lol.",
+    "category": "Media",
+    "monthlyVisits": 120000,
+    "globalRank": 69732,
+    "technologies": [
+      "Cloudflare"
+    ],
+    "tags": [
+      "radio",
+      "403",
+      "forbidden"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "ascii.lol",
+    "title": "You had one thought. We made it wearable. &ndas...",
+    "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
+    "category": "AI",
+    "monthlyVisits": 85000,
+    "globalRank": 97787,
+    "technologies": [
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "ascii",
+      "you",
+      "had",
+      "one"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "css.lol",
+    "title": "css.lol",
+    "description": "Online service and creative project hosted at css.lol.",
+    "category": "Tools",
+    "monthlyVisits": 85000,
+    "globalRank": 95504,
+    "technologies": [
+      "HTML5"
+    ],
+    "tags": [
+      "css",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "calc.lol",
+    "title": "GPU Mining Calculator. What to Mine on GPU",
+    "description": "Calculator of GPUs mining profitability. We calculate the most profitable coins that can be mined immediately on our pool with a low fee.",
+    "category": "Tools",
+    "monthlyVisits": 85000,
+    "globalRank": 98938,
+    "technologies": [
+      "Cloudflare",
+      "React",
+      "Vue",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "calc",
+      "gpu",
+      "mining",
+      "calculator"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "art.lol",
+    "title": "art.lol",
+    "description": "An art project.",
+    "category": "Tools",
+    "monthlyVisits": 85000,
+    "globalRank": 94459,
+    "technologies": [
+      "Vercel",
+      "Next.js"
+    ],
+    "tags": [
+      "art",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "wordle.lol",
+    "title": "Wordle på norsk | Wordle.lol",
+    "description": "Den norske versjonen av ordspillet Wordle.",
+    "category": "Tools",
+    "monthlyVisits": 85000,
+    "globalRank": 94836,
+    "technologies": [
+      "Cloudflare"
+    ],
+    "tags": [
+      "wordle",
+      "norsk",
+      "lol"
+    ],
+    "source": "Semrush",
+    "lastChecked": "2026-08-23"
+  }
+]
