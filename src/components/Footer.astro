@@ -1,10 +1,32 @@
 ---
 ---
-<footer class="border-t border-border-subtle mt-24 py-8 bg-white">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-text-muted">
-    <p>&copy; {new Date().getFullYear()} .lol Explorer</p>
-    <div class="flex items-center gap-4">
-      <a href="https://lol.fazleyrabbi.xyz" class="hover:text-black transition-colors">lol.fazleyrabbi.xyz</a>
+<footer class="border-t-2 border-black mt-16 py-8 bg-white">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs font-mono font-bold">
+    <!-- Brand / Copyright -->
+    <div class="flex items-center gap-2">
+      <span class="bg-black text-white px-2 py-0.5 text-[11px] font-mono font-bold">.LOL</span>
+      <span class="text-neutral-700">&copy; {new Date().getFullYear()} .lol Explorer</span>
+    </div>
+
+    <!-- Live Visitor Hit Counter Badge -->
+    <div class="flex items-center gap-2 border-2 border-black bg-[#FFFDF5] p-1 shadow-[2px_2px_0px_#000]">
+      <span class="text-[10px] text-neutral-500 uppercase px-1 font-bold">Live Traffic:</span>
+      <img 
+        src="https://hits.sh/lol.fazleyrabbi.xyz.svg?style=flat-square&label=VISITS&color=FFE600&labelColor=000000" 
+        alt="Live Visits" 
+        class="h-5 inline-block"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Links -->
+    <div class="flex items-center gap-4 text-neutral-700">
+      <a href="https://lol.fazleyrabbi.xyz" class="hover:text-black hover:underline transition-all">
+        lol.fazleyrabbi.xyz
+      </a>
+      <a href="https://github.com/fazleyrabby/lols" target="_blank" rel="noopener noreferrer" class="hover:text-black hover:underline transition-all">
+        GitHub
+      </a>
     </div>
   </div>
 </footer>
