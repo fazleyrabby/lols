@@ -132,9 +132,33 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
       RESET ALL FILTERS
     </button>
   </div>
+
+  <!-- Pagination / Show More Section -->
+  <div id="pagination-container" class="mt-8 flex flex-col items-center justify-center gap-3">
+    <button 
+      id="show-more-btn" 
+      type="button" 
+      class="px-8 py-3.5 bg-[#FFE600] hover:bg-[#FFF066] text-black font-mono font-black text-xs sm:text-sm uppercase tracking-wider border-2 border-black shadow-[4px_4px_0px_#000] hover:shadow-[6px_6px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer flex items-center gap-2.5"
+    >
+      <span>Show More Websites</span>
+      <span id="show-more-count" class="bg-black text-white px-2 py-0.5 text-xs font-mono font-bold">+24</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="pagination-info" class="text-xs font-mono font-bold text-neutral-600">
+      Showing 24 of {sites.length} sites
+    </div>
+    <!-- End of list notice -->
+    <div id="all-loaded-msg" class="hidden text-xs font-mono font-bold text-neutral-600 uppercase tracking-wide flex items-center gap-2 py-2 px-4 bg-white border-2 border-black shadow-[2px_2px_0px_#000]">
+      <span class="w-2 h-2 rounded-full bg-[#A3E635] border border-black"></span>
+      <span>All matching websites loaded</span>
+    </div>
+  </div>
 </section>
 
 <script>
+  const PAGE_SIZE = 24;
+  let visibleLimit = PAGE_SIZE;
+
   let currentCategory = 'All';
   let currentTech = 'all';
   let currentSearch = '';
@@ -153,10 +177,17 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
   const resetBtn = document.getElementById('reset-filters-btn') as HTMLButtonElement;
   const catPills = document.querySelectorAll('.cat-pill');
 
+  const paginationContainer = document.getElementById('pagination-container') as HTMLElement;
+  const showMoreBtn = document.getElementById('show-more-btn') as HTMLButtonElement;
+  const showMoreCount = document.getElementById('show-more-count') as HTMLElement;
+  const paginationInfo = document.getElementById('pagination-info') as HTMLElement;
+  const allLoadedMsg = document.getElementById('all-loaded-msg') as HTMLElement;
+
   if (explorerSearch) {
     explorerSearch.addEventListener('input', (e) => {
       const val = (e.target as HTMLInputElement).value;
       currentSearch = val.toLowerCase().trim();
+      visibleLimit = PAGE_SIZE;
       applyFilters();
     });
   }
@@ -172,6 +203,7 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
       pill.classList.add('bg-black', 'text-white');
 
       currentCategory = pill.getAttribute('data-category') || 'All';
+      visibleLimit = PAGE_SIZE;
       applyFilters();
     });
   });
@@ -179,6 +211,7 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
   // Tech Select
   techSelect?.addEventListener('change', (e) => {
     currentTech = (e.target as HTMLSelectElement).value;
+    visibleLimit = PAGE_SIZE;
     applyFilters();
   });
 
@@ -186,6 +219,8 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
   sortSelect?.addEventListener('change', (e) => {
     currentSort = (e.target as HTMLSelectElement).value;
     applySorting();
+    visibleLimit = PAGE_SIZE;
+    applyFilters();
   });
 
   // View Toggles
@@ -213,12 +248,19 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
     viewGridBtn.classList.add('text-neutral-400');
   });
 
+  // Show More Button
+  showMoreBtn?.addEventListener('click', () => {
+    visibleLimit += PAGE_SIZE;
+    applyFilters();
+  });
+
   // Reset Button
   resetBtn?.addEventListener('click', () => {
     currentSearch = '';
     currentCategory = 'All';
     currentTech = 'all';
     currentSort = 'visits-desc';
+    visibleLimit = PAGE_SIZE;
 
     if (explorerSearch) explorerSearch.value = '';
     if (techSelect) techSelect.value = 'all';
@@ -234,14 +276,14 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
       }
     });
 
-    applyFilters();
     applySorting();
+    applyFilters();
   });
 
   function applyFilters() {
     const gridItems = Array.from(gridContainer.children) as HTMLElement[];
     const listItems = Array.from(listContainer.children) as HTMLElement[];
-    let visibleCount = 0;
+    let matchingCount = 0;
     const totalCount = gridItems.length;
 
     gridItems.forEach((gridEl, idx) => {
@@ -267,25 +309,62 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
       // Tech match
       const matchesTech = currentTech === 'all' || tech.split(',').map(t => t.trim().toLowerCase()).includes(currentTech.toLowerCase());
 
-      const isVisible = matchesSearch && matchesCategory && matchesTech;
+      const isMatch = matchesSearch && matchesCategory && matchesTech;
 
-      if (isVisible) {
-        gridEl.style.display = '';
-        if (listEl) listEl.style.display = '';
-        visibleCount++;
+      if (isMatch) {
+        matchingCount++;
+        if (matchingCount <= visibleLimit) {
+          gridEl.style.display = '';
+          if (listEl) listEl.style.display = '';
+        } else {
+          gridEl.style.display = 'none';
+          if (listEl) listEl.style.display = 'none';
+        }
       } else {
         gridEl.style.display = 'none';
         if (listEl) listEl.style.display = 'none';
       }
     });
 
-    // Update count
+    const currentlyDisplayed = Math.min(visibleLimit, matchingCount);
+
+    // Update count in header
     if (resultsCount) {
-      resultsCount.textContent = `Showing ${visibleCount} of ${totalCount} sites`;
+      if (matchingCount === totalCount) {
+        resultsCount.textContent = `Showing ${currentlyDisplayed} of ${totalCount} sites`;
+      } else {
+        resultsCount.textContent = `Showing ${currentlyDisplayed} of ${matchingCount} sites (${totalCount} total)`;
+      }
+    }
+
+    // Update pagination section
+    if (paginationContainer) {
+      if (matchingCount === 0) {
+        paginationContainer.classList.add('hidden');
+      } else {
+        paginationContainer.classList.remove('hidden');
+
+        if (paginationInfo) {
+          paginationInfo.textContent = `Showing ${currentlyDisplayed} of ${matchingCount} sites`;
+        }
+
+        if (currentlyDisplayed < matchingCount) {
+          showMoreBtn?.classList.remove('hidden');
+          allLoadedMsg?.classList.add('hidden');
+          const remaining = matchingCount - currentlyDisplayed;
+          const nextBatch = Math.min(PAGE_SIZE, remaining);
+          if (showMoreCount) {
+            showMoreCount.textContent = `+${nextBatch}`;
+          }
+        } else {
+          showMoreBtn?.classList.add('hidden');
+          allLoadedMsg?.classList.remove('hidden');
+        }
+      }
     }
 
     // Empty state toggle
-    if (visibleCount === 0) {
+    if (matchingCount === 0) {
       emptyState.classList.remove('hidden');
       gridContainer.classList.add('hidden');
       listContainer.classList.add('hidden');
@@ -330,4 +409,8 @@ const technologies = ['All Technologies', ...new Set(sites.flatMap((s) => s.tech
     gridItems.sort(sortFn).forEach((el) => gridContainer.appendChild(el));
     listItems.sort(sortFn).forEach((el) => listContainer.appendChild(el));
   }
+
+  // Initial execution to apply page limit on page load
+  applySorting();
+  applyFilters();
 </script>

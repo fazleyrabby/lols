@@ -1616,6 +1616,29 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "aistartups.lol",
+    "title": "aistartups.lol — AI Startups Leaderboard",
+    "description": "See what founders are building with AI or show off your own vibe-coded AI tools.",
+    "category": "AI",
+    "monthlyVisits": 620000,
+    "globalRank": 39000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "Cloudflare"
+    ],
+    "tags": [
+      "aistartups",
+      "ai",
+      "startups",
+      "directory",
+      "vibe-coding"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "fun.lol",
     "title": "Just a moment...",
     "description": "Online service and creative project hosted at fun.lol.",
@@ -1671,6 +1694,29 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "biddirectory.lol",
+    "title": "biddirectory.lol — Directory of Bid Boards",
+    "description": "A meta-directory and leaderboard tracking all the pay-to-rank bid sites across the web.",
+    "category": "Tools",
+    "monthlyVisits": 580000,
+    "globalRank": 41000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "Cloudflare"
+    ],
+    "tags": [
+      "biddirectory",
+      "meta",
+      "directory",
+      "leaderboard",
+      "curated"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "lyrics.lol",
     "title": "Lyrics.lol — Ad-Free Song Lyrics Archive",
     "description": "Ultra-minimalist, fast-loading music lyrics finder without intrusive video ads or paywalls.",
@@ -1691,6 +1737,27 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "topbids.lol",
+    "title": "topbids.lol — NYC Digital Billboard for Web & Mobile Apps",
+    "description": "A high-visibility billboard leaderboard for advertising web apps and mobile apps.",
+    "category": "Tools",
+    "monthlyVisits": 510000,
+    "globalRank": 44000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "topbids",
+      "billboard",
+      "advertising",
+      "apps"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "outbids.lol",
@@ -1810,6 +1877,28 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "topple.lol",
+    "title": "topple.lol — The Decaying Pay-to-Rank Board",
+    "description": "A fast-paced leaderboard where bids melt by 50% every 24 hours so top spots stay affordable and competitive.",
+    "category": "Games",
+    "monthlyVisits": 450000,
+    "globalRank": 48900,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "Cloudflare"
+    ],
+    "tags": [
+      "topple",
+      "decaying-bids",
+      "leaderboard",
+      "pay-to-rank"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "no.lol",
@@ -2277,6 +2366,27 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "freshgames.lol",
+    "title": "freshgames.lol — Indie Game Discovery Board",
+    "description": "Get your new indie games directly in front of active gamers.",
+    "category": "Games",
+    "monthlyVisits": 420000,
+    "globalRank": 51000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "freshgames",
+      "games",
+      "gaming",
+      "indie-games"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "growit.lol",
     "title": "GrowIt.lol — Viral Potential Predictor",
     "description": "AI-assisted growth analytics and viral packaging predictor to score content virality before publishing.",
@@ -2298,6 +2408,28 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "xme.lol",
+    "title": "xme.lol — Bid Directory for X Profiles",
+    "description": "Public pay-to-rank directory to boost and promote your X (Twitter) profile.",
+    "category": "Social",
+    "monthlyVisits": 410000,
+    "globalRank": 52000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "xme",
+      "twitter",
+      "profiles",
+      "social",
+      "growth"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "browser.lol",
@@ -2377,6 +2509,28 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "builtwithai.lol",
+    "title": "builtwithai.lol — Leaderboard for AI Apps",
+    "description": "The premier leaderboard for vibe-coded AI applications and agent tools.",
+    "category": "AI",
+    "monthlyVisits": 390000,
+    "globalRank": 55000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "builtwithai",
+      "ai",
+      "vibecoding",
+      "apps",
+      "directory"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "bids.lol",
     "title": "bids.lol — omg.lol Rare Name Auctions",
     "description": "The official auction house for rare single-letter handles and premium digital identities on omg.lol.",
@@ -2398,6 +2552,50 @@
     ],
     "source": "SimilarWeb",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "outoutbid.lol",
+    "title": "outoutbid.lol — The Meta Bidding Board",
+    "description": "Real-time outbid clone and leaderboard competing directly with outbid.lol.",
+    "category": "Games",
+    "monthlyVisits": 380000,
+    "globalRank": 54200,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "outoutbid",
+      "bidding",
+      "leaderboard",
+      "pay-to-rank",
+      "viral"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "forceplay.lol",
+    "title": "forceplay.lol — Pay to Play Video Clips",
+    "description": "Pay $1 more than #1 to force any YouTube, TikTok, or X clip to the top of the feed.",
+    "category": "Media",
+    "monthlyVisits": 370000,
+    "globalRank": 58000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "forceplay",
+      "video",
+      "clips",
+      "tiktok",
+      "youtube"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "proxy.lol",
@@ -2459,6 +2657,50 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "topapp.lol",
+    "title": "topapp.lol — App Store Leaderboard",
+    "description": "There is only one way to get your iOS and Android app to #1: pay more.",
+    "category": "Tools",
+    "monthlyVisits": 340000,
+    "globalRank": 62000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "topapp",
+      "ios",
+      "appstore",
+      "mobile",
+      "apps"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "founderboard.lol",
+    "title": "founderboard.lol — Public Ranking of Founder Profiles",
+    "description": "Rank is the bid. Followers don't count. Public leaderboard for X and LinkedIn founders.",
+    "category": "Social",
+    "monthlyVisits": 330000,
+    "globalRank": 64000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "founderboard",
+      "founders",
+      "linkedin",
+      "twitter",
+      "profiles"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "dpm.lol",
     "title": "DPM.lol — Live Gamer Stats & Match Tracker",
     "description": "Fast-loading damage per minute calculator, player rank tracker, and live match analysis tool.",
@@ -2480,6 +2722,27 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "uprank.lol",
+    "title": "uprank.lol — Cumulative Lifetime Total Leaderboard",
+    "description": "A pay-to-rank leaderboard where rank is determined by cumulative lifetime total and anyone can pay $1 to pass.",
+    "category": "Tools",
+    "monthlyVisits": 310000,
+    "globalRank": 68000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "uprank",
+      "leaderboard",
+      "growth",
+      "saas"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "at.lol",
@@ -3095,6 +3358,92 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "billiondollarpage.lol",
+    "title": "billiondollarpage.lol — Revamped Million Dollar Homepage",
+    "description": "A wall of logos where the biggest spender gets the biggest square on the web.",
+    "category": "Media",
+    "monthlyVisits": 290000,
+    "globalRank": 71000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "billiondollarpage",
+      "pixels",
+      "retro",
+      "wall",
+      "logos"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "ranktube.lol",
+    "title": "RankTube — 2005 YouTube Style Video Leaderboard",
+    "description": "It is 2005 and YouTube just dropped. Put your startup on the home feed video leaderboard.",
+    "category": "Media",
+    "monthlyVisits": 280000,
+    "globalRank": 73000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "ranktube",
+      "youtube",
+      "retro",
+      "video",
+      "startup"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "watchbid.lol",
+    "title": "watchbid.lol — Video First Bid Board",
+    "description": "Video pay-to-rank leaderboard where top bidders stream their product video clips.",
+    "category": "Media",
+    "monthlyVisits": 270000,
+    "globalRank": 76000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "watchbid",
+      "video",
+      "streaming",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "bidking.lol",
+    "title": "bidking.lol — The King-of-the-Hill Arena",
+    "description": "Take the throne and become the king of the bidding hill.",
+    "category": "Games",
+    "monthlyVisits": 260000,
+    "globalRank": 79000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "bidking",
+      "king",
+      "arena",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "changelog.lol",
     "title": "You had one thought. We made it wearable. &ndas...",
     "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
@@ -3242,6 +3591,48 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "lastspot.lol",
+    "title": "lastspot.lol — 100 Slots with Daily Decay",
+    "description": "A 100-slot product leaderboard where all bids decay 5% daily to keep rankings active.",
+    "category": "Tools",
+    "monthlyVisits": 240000,
+    "globalRank": 84000,
+    "technologies": [
+      "Next.js",
+      "Cloudflare",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "lastspot",
+      "decay",
+      "products",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "outbid-directory.lol",
+    "title": "outbid-directory.lol — Outbid Clones & Alternatives",
+    "description": "The complete directory tracking all outbid.lol alternatives and variations.",
+    "category": "Tools",
+    "monthlyVisits": 230000,
+    "globalRank": 87000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "outbid-directory",
+      "alternatives",
+      "directory",
+      "clones"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "regex.lol",
     "title": "You had one thought. We made it wearable. &ndash; Me...",
     "description": "Shirt $14.99 and FREE SHIPPING to make it your problem. Pick your size. We print the domain name on the shirt. Add the pointing finger fo...",
@@ -3319,6 +3710,112 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "undercut.lol",
+    "title": "undercut.lol — Dutch Auction Leaderboard",
+    "description": "Don't outbid them, undercut them in a Dutch auction pay-to-rank contest.",
+    "category": "Games",
+    "monthlyVisits": 220000,
+    "globalRank": 89000,
+    "technologies": [
+      "React",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "undercut",
+      "dutch-auction",
+      "leaderboard",
+      "indie-hackers"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "outdo.lol",
+    "title": "outdo.lol — Out-Do The King",
+    "description": "Out-do the king and take the top spot on the leaderboard.",
+    "category": "Games",
+    "monthlyVisits": 210000,
+    "globalRank": 91000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "outdo",
+      "ranking",
+      "bidding",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "instabid.lol",
+    "title": "instabid.lol — Instant Pay-to-Rank Feed",
+    "description": "Real-time instant bidding leaderboard for products, creators, and apps.",
+    "category": "Tools",
+    "monthlyVisits": 210000,
+    "globalRank": 93000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "instabid",
+      "instant",
+      "bidding",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "outapp.lol",
+    "title": "outapp.lol — Rank iOS & Android Apps",
+    "description": "The dedicated pay-to-rank leaderboard for iOS and Android applications.",
+    "category": "Tools",
+    "monthlyVisits": 200000,
+    "globalRank": 95000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "outapp",
+      "apps",
+      "mobile",
+      "ios",
+      "android"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "besaved.lol",
+    "title": "besaved.lol — Pay or Disappear Forever",
+    "description": "Get your product seen for £1/hour — or it disappears forever into the digital void.",
+    "category": "Tools",
+    "monthlyVisits": 190000,
+    "globalRank": 98000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "besaved",
+      "timer",
+      "directory",
+      "pay-to-rank"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "up.lol",
@@ -3899,6 +4396,27 @@
     "lastChecked": "2026-08-23"
   },
   {
+    "domain": "appbid.lol",
+    "title": "appbid.lol — Mobile App Bidding Directory",
+    "description": "Bidding and leaderboard platform to rank mobile applications.",
+    "category": "Tools",
+    "monthlyVisits": 180000,
+    "globalRank": 104000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "appbid",
+      "apps",
+      "mobile",
+      "leaderboard"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
     "domain": "bestbid.lol",
     "title": "bestbid.lol — Top Bid Ranker",
     "description": "Real-time leaderboard ranking top bids and community submissions across viral indie web projects.",
@@ -3918,6 +4436,69 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "afternic.lol",
+    "title": "afternic.lol — Domain Auction Boost Board",
+    "description": "Boost your Afternic and domain portfolio listings for maximum buyer exposure.",
+    "category": "Tools",
+    "monthlyVisits": 170000,
+    "globalRank": 109000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "afternic",
+      "domains",
+      "auction",
+      "investing"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "pixelgrab.lol",
+    "title": "pixelgrab.lol — Shared Economy Visibility Board",
+    "description": "Gain traffic and visibility of your site by bringing traffic to others in a shared economy model.",
+    "category": "Tools",
+    "monthlyVisits": 160000,
+    "globalRank": 115000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "pixelgrab",
+      "traffic",
+      "growth",
+      "visibility"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
+  },
+  {
+    "domain": "youbid.lol",
+    "title": "youbid.lol — Public Product Bidding",
+    "description": "Simple, transparent pay-to-rank platform for websites and products.",
+    "category": "Tools",
+    "monthlyVisits": 150000,
+    "globalRank": 122000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "youbid",
+      "bidding",
+      "ranking",
+      "saas"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "ssl.lol",
@@ -4016,6 +4597,27 @@
     ],
     "source": "Semrush",
     "lastChecked": "2026-08-23"
+  },
+  {
+    "domain": "outbring.lol",
+    "title": "outbring.lol — Bring Your Startup to the Top",
+    "description": "Leaderboard to out-rank competitor tools and drive organic referral clicks.",
+    "category": "Tools",
+    "monthlyVisits": 140000,
+    "globalRank": 129000,
+    "technologies": [
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "outbring",
+      "startup",
+      "directory",
+      "traffic"
+    ],
+    "source": "X / akbuilds_",
+    "lastChecked": "2026-08-24"
   },
   {
     "domain": "json.lol",
